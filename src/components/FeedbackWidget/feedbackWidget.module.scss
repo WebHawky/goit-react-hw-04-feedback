@@ -6,13 +6,13 @@
   margin-left: auto;
   width: 350px;
   padding: 15px;
-}
 
-.button {
-  margin-right: 15px;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
+  &__btn {
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }
 
 .statList {
@@ -20,9 +20,13 @@
   margin-top: 0px;
   margin-bottom: 0px;
   list-style: none;
+
+  &__item {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
 }
 
-.statListItem {
-  margin-bottom: 10px;
-  font-weight: 500;
+.notification {
+  margin-top: 15px;
 }
