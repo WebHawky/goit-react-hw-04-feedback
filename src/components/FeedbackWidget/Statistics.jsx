@@ -1,5 +1,5 @@
 import { PropTypes } from 'prop-types';
-import s from './feedbackWidget.module.scss';
+import s from './feedback-widget.module.scss';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (

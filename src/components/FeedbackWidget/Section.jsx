@@ -1,5 +1,5 @@
 import { PropTypes } from 'prop-types';
-import s from './feedbackWidget.module.scss';
+import s from './feedback-widget.module.scss';
 
 export default function Section({ title, children }) {
   return (
