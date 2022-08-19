@@ -13,7 +13,7 @@ export default function FeedbackWidget({
   return (
     <Section title={'Please leave feedback'}>
       <FeedbackOptions
-        options={['good', 'neutral', 'bad']}
+        options={Object.keys(state)}
         onLeaveFeedback={countFeedback}
       />
       {countTotalFeedback ? (
@@ -21,8 +21,8 @@ export default function FeedbackWidget({
           good={good}
           neutral={neutral}
           bad={bad}
-          total={countTotalFeedback}
-          positivePercentage={countPositiveFeedbackPercentage}
+          total={countTotalFeedback()}
+          positivePercentage={countPositiveFeedbackPercentage()}
         />
       ) : (
         <Notification message="There's no any feedback" />

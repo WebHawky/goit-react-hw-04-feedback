@@ -21,7 +21,6 @@ export class App extends Component {
 
     const result = (this.state.good / total) * 100;
     return Number(result.toFixed(2));
-    // return toFixed(this.good / this.countTotalFeedback()) * 100;
   };
 
   countFeedback = ({ target }) => {
@@ -37,8 +36,8 @@ export class App extends Component {
     return (
       <FeedbackWidget
         state={this.state}
-        countTotalFeedback={this.countTotalFeedback()}
-        countPositiveFeedbackPercentage={this.countPositiveFeedbackPercentage()}
+        countTotalFeedback={this.countTotalFeedback}
+        countPositiveFeedbackPercentage={this.countPositiveFeedbackPercentage}
         countFeedback={this.countFeedback}
       />
     );
